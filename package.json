@@ -1,5 +1,5 @@
 {
-  "name": "Architecture_Report_System",
+  "name": "Electron_General_UI",
   "version": "1.0.0",
   "description": "ui template",
   "main": "main.js",
@@ -9,12 +9,13 @@
   },
   "keywords": [
     "electron",
-    "slider"
+    "sliding menu"
   ],
   "author": "vhjx",
-  "license": "GPL",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^1.6.11"
+    "electron": "^1.6.11",
+    "electron-packager": "*"
   },
   "dependencies": {
     "about-window": "^1.7.0",
