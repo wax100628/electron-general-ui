@@ -147,7 +147,7 @@ var tp100option = {
 };
 
 
-// div resize
+// 实时重置图标尺寸
 ipcCharts.on('resize-charts-to-render', (ev, arg)=>{
 
 	console.log(arg);
@@ -162,6 +162,7 @@ ipcCharts.on('resize-charts-to-render', (ev, arg)=>{
 	icpChart.resize();
 });
 
+// 网页加载时运行
 $(document).ready(function(){
     // 绑定图表
     tpChart.setOption(tp100option);

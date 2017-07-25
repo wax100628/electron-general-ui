@@ -13,8 +13,6 @@ var utils = require('./js/utils');
 
 // main进程
 let win = null;
-// 串口对象
-var portObj = null;
 
 // 创建窗体
 function createWindow() {
@@ -25,7 +23,7 @@ function createWindow() {
     height: 640,
 	titleBarStyle: 'hidden-inset',
     frame: false,
-    icon: join(__dirname, 'imgs', 'train.ico'),
+    icon: join(__dirname, 'imgs', 'tray.ico'),
     show: false
   });
 

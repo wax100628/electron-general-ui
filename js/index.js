@@ -5,22 +5,18 @@ const ipcRender = require('electron').ipcRenderer;
 var utils = require('../js/utils');
 var log = utils.log;
 
-var minBtn = $("#menu-min")[0];
-var maxBtn = $("#menu-max")[0];
-var closeBtn = $("#menu-close")[0];
-var titleBar = $("#title")[0];
-
 // 添加按钮click事件监听
-minBtn.addEventListener('click', () => {
-    ipcRender.send('min-window');
-});
-maxBtn.addEventListener('click', () => {
-    ipcRender.send('max-window');
-});
-closeBtn.addEventListener('click', () => {
-    ipcRender.send('close-window');
+$("#menu-min").click(function(ev){
+	ipcRender.send('min-window');
 });
 
+$("#menu-max").click(function(ev){
+	ipcRender.send('max-window');
+});
+
+$("#menu-close").click(function(ev){
+	ipcRender.send('close-window');
+});
 
 // 菜单按钮单击事件
 $("#menu-toggle").click(function () {
@@ -66,46 +62,12 @@ $("#sensors-data-charts").click(function(){
 	}, 2000);
 });
 
-// 串口设置
-$("#port-set").click(function(){
-    $("#page-content-wrapper").load("../html/loading.html");
-    setTimeout(function(){
-        $("#page-content-wrapper").load("../html/port-settings.html");
-    }, 1000);
-});
-
-// 打开串口
-$("#port-open").click(function(){
-    ipcRender.send('open-port-cmd');
-});
-
-// 关闭串口
-$("#port-close").click(function(){
-    ipcRender.send('close-port-cmd');
-});
-
+// Log消息至浏览器console
 ipcRender.on('log-msg', (ev,arg)=>{
     log(arg);
 });
 
-// J2自检
-$("#j2-selfcheck-cmd").click(function(){
-    ipcRender.send('j2-selfcheck-cmd');
-});
-// J3自检
-$("#j3-selfcheck-cmd").click(function(){
-    ipcRender.send('j3-selfcheck-cmd');
-});
-// J2采样
-$("#j2-detect-cmd").click(function(){
-    ipcRender.send('j2-detect-cmd');
-});
-// J3采样
-$("#j3-detect-cmd").click(function(){
-    ipcRender.send('j3-detect-cmd');
-});
-
-// 关于
+// 发送打开关于窗口的消息
 $("#about").click(function(){
     ipcRender.send('open-about-dialog');
 });
