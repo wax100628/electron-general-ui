@@ -1,4 +1,4 @@
-**A UI Template Based In Electron**
+**A UI Template Based On Electron**
 =====
 
 - Sliding menu
