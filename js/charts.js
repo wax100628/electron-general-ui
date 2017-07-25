@@ -3,13 +3,13 @@
 const ipcCharts = require('electron').ipcRenderer;
 var echarts = require('echarts');
 
-// 两个图表
+// 两个图表 - 温度曲线/振动曲线
 var tpChart = echarts.init(document.getElementById('tp-content-wrapper'));
 var icpChart = echarts.init(document.getElementById('icp-content-wrapper'));
 
-// icp X 轴
+// 振动 X 轴
 var icpXAxisData = [];
-// icp 两条线
+// 双通道振动曲线
 var icp1Data = [];
 var icp2Data = [];
 
@@ -19,7 +19,7 @@ for (var i = 0; i < 100; i++) {
     icp2Data.push(((Math.cos(i / 5) * (i / 5 -10) + i / 6).toFixed(2) * 5).toFixed(2));
 }
 
-// 显示 icp 图
+// 构造振动图表属性
 var icpOption = {
     title: {
         text: '振动图表-柱状图'
@@ -76,7 +76,7 @@ var icpOption = {
 };
 
 
-// tp 线
+// 温度曲线数据
 var tpXData = [];
 var tpData = [];
 
@@ -92,8 +92,7 @@ for(var i = 0; i < 7; i++)
 // TP100 温度曲线
 var tp100option = {
     title: {
-        text: 'TP100',
-        subtext: '虚构数值'
+        text: 'TP100'
     },
     tooltip: {
         trigger: 'axis'
@@ -147,7 +146,7 @@ var tp100option = {
 };
 
 
-// 实时重置图标尺寸
+// 重置图表尺寸
 ipcCharts.on('resize-charts-to-render', (ev, arg)=>{
 
 	console.log(arg);

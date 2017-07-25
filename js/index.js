@@ -54,7 +54,7 @@ ipcRender.on('maximized', () => {
 });
 
 // 两个图表
-$("#sensors-data-charts").click(function(){
+$("#main-charts").click(function(){
     $("#page-content-wrapper").load("../html/loading.html");
 	setTimeout(function(){
         $("#page-content-wrapper").load("../html/charts.html")
