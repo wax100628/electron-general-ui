@@ -1,0 +1,34 @@
+
+ body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+ }
+ 
+a {
+	text-decoration: none;
+    -webkit-app-region:no-drag;
+}
+
+#tp-content-wrapper{
+    width: 100%;
+	padding:30px 20px 10px 20px;
+}
+
+#icp-content-wrapper {
+    width: 100%;
+	padding:10px 20px 20px 20px;
+	bottom:10px;
+}
+
+@media(min-width:768px){
+	#tp-content-wrapper{
+		padding:30px 20px 10px 20px;
+		position:relative;
+	}
+
+	#icp-content-wrapper{
+		padding:10px 20px 20px 20px;
+		position:relative;
+		bottom:10px;
+	}
+}

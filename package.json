@@ -1,0 +1,25 @@
+{
+  "name": "Architecture_Report_System",
+  "version": "1.0.0",
+  "description": "ui template",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager ./ --platform=win32 --arch=x64 --electron-version=1.6.11 --icon=./imgs/train.ico --out=./dist"
+  },
+  "keywords": [
+    "electron",
+    "slider"
+  ],
+  "author": "vhjx",
+  "license": "GPL",
+  "devDependencies": {
+    "electron": "^1.6.11"
+  },
+  "dependencies": {
+    "about-window": "^1.7.0",
+    "echarts": "^3.6.2",
+    "nconf": "^0.8.4",
+    "node-notifier": "^5.1.2"
+  }
+}

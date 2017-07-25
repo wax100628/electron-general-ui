@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=yes, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="vhjx">
+
+    <title>port-settings</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+     <link href="../css/bootstrap-theme.min.css" rel="stylesheet"> 
+
+    <!-- Custom CSS -->
+    <link href="../css/settings.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div id="settings-content-wrapper" style="display:none;">
+            <div class="panel panel-default" style="margin-top:40px;">
+                <div class="panel-heading">
+                    <h1>串口设置</h1>
+                </div>
+                <div class="panel-body container-fluid" style="margin-right:5px;">
+                    <form class="form-horizontal row">
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">串口名：</div>
+                            <select class="form-control" id="portName">
+                            </select>
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">波特率：</div>
+                            <select class="form-control" id="baudRate">
+                                        <option value="110">110</option>
+                                        <option value="300">300</option>
+                                        <option value="1200">1200</option>
+                                        <option value="2400">2400</option>
+                                        <option value="4800">4800</option>
+                                        <option value="9600" selected="selected">9600</option>
+                                        <option value="14400">14400</option>
+                                        <option value="19200">19200</option>
+                                        <option value="38400">38400</option>
+                                        <option value="57600">57600</option>
+                                        <option value="115200">115200</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">校验方式</div>
+                            <select class="form-control" id="parity">
+                                        <option value="none" selected="selected">none</option>
+                                        <option value="even">even</option>
+                                        <option value="mark">mark</option>
+                                        <option value="odd">odd</option>
+                                        <option value="space">space</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">数据位数</div>
+                            <select class="form-control" id="dataBits">
+                                        <option value="8" selected="selected">8</option>
+                                        <option value="7">7</option>
+                                        <option value="6">6</option>
+                                        <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">流控方式</div>
+                            <select class="form-control" id="flowCtrl">
+                                        <option value="none" selected="selected">NONE</option>
+                                        <option value="rtscts">RTS/CTS</option>
+                                        <option value="xonxoff">XON/XOFF</option>
+                                        <option value="xany">XAny</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">停止位：</div>
+                            <select class="form-control" id="stopBits">
+                                        <option value="1" selected="selected">1</option>
+                                        <option value="2">2</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">目标地址</div>
+                            <input class="form-control" id="hostAddr" type="text" placeholder="00 ~ FF">
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">本机地址</div>
+                            <input class="form-control" id="localAddr" type="text" placeholder="00 ~ FF">
+                        </div>
+
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-addon">运行模式</div>
+                            <select class="form-control" id="devMode">
+                                        <option value="true">调试模式</option>
+                                        <option value="false">一般模式</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group col-sm-12">
+                            <div class="container-fluid" style="margin-right:5px; margin-top:12px;">
+                                <div class="row">
+                                    <button class="btn btn-primary col-sm-offset-2 col-sm-3" type="button" id="apply">应用</button>
+                                    <button class="btn btn-default col-sm-offset-2 col-sm-3" type="reset">重置</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- jQuery -->
+    <script>
+        delete module.exports
+    </script>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <script src="../js/settings.js"></script>
+    <script>
+        $("#settings-content-wrapper").slideDown('slow');
+    </script>
+</body>
+
+</html>

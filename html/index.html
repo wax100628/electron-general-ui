@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=yes, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="vhjx">
+
+    <title>土建報表系統</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper" class="toggled" style="display:none;">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html" id="app-index">CRH5检修系统</a>
+                </li>
+                <li>
+                    <div class="mdivider"></div>
+                </li>
+                <li>
+                    <a href="#" id="port-set"><i class="glyphicon glyphicon-cog"></i> 串口设置</a>
+                </li>
+                <li>
+                    <a href="#" id="port-open"><i class="glyphicon glyphicon-play"></i> 打开串口</a>
+                </li>
+                <li>
+                    <a href="#" id="port-close"><i class="glyphicon glyphicon-stop"></i> 关闭串口</a>
+                </li>
+                <li>
+                    <div class="mdivider"></div>
+                </li>
+
+                <li>
+                    <a href="#" id="j2-selfcheck-cmd"><i class="glyphicon glyphicon-console"></i> J2自检</a>
+                </li>
+                <li>
+                    <a href="#" id="j3-selfcheck-cmd"><i class="glyphicon glyphicon-console"></i> J3自检</a>
+                </li>
+                <li>
+                    <a href="#" id="j2-detect-cmd"><i class="glyphicon glyphicon-console"></i> J2采样</a>
+                </li>
+                <li>
+                    <a href="#" id="j3-detect-cmd"><i class="glyphicon glyphicon-console"></i> J3采样</a>
+                </li>
+
+                <li>
+                    <div class="mdivider"></div>
+                </li>
+                <li>
+                    <a href="#" id="sensors-data-charts"><i class="glyphicon glyphicon-picture"></i> 两个图表</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="#" id="about"><i class="glyphicon glyphicon-info-sign"></i> 关于</a>
+                </li>
+                <li>
+                    <div class="mdivider"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- title-bar -->
+        <div class="navbar navbar-default" id="title">
+            <a href="#" title="菜单" class="glyphicon glyphicon-align-right" id="menu-toggle"></a>
+            <div class="" id="min-max-close">
+                <a href="#" title="最小化" class="glyphicon glyphicon-minus" id="menu-min"></a>
+                <a href="#" title="最大化" class="glyphicon glyphicon-resize-full" id="menu-max"></a>
+                <a href="#" title="关闭" class="glyphicon glyphicon-remove" , id="menu-close"></a>
+            </div>
+        </div>
+        <!-- title-bar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" style="margin-top:50px;">
+                <div class="row">
+                    <div class="panel panel-default col-sm-12" style="padding-left:0px;padding-right:0px;">
+                        <div class="panel-heading">
+                            <h4><span class="glyphicon glyphicon-transfer"></span><b>  CRH5检修系统</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>- 检测<code>温度</code>.</p>
+                            <p>- 检测<code>振动状态</code>.</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default col-sm-12" style="padding-left:0px; padding-right:0px;">
+                        <div class="panel-heading">
+                            <h4><span class="glyphicon glyphicon-pushpin"></span><b>  更新日志</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>* 初始版本:<code>1.0.0</code>.</p>
+                            <p>* 编译日期:<code>2017-07-20</code>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script>
+        delete module.exports
+    </script>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <!-- <script src="../js/utils.js"></script>  -->
+    <script src="../js/index.js"></script>
+    <script>
+        $("#wrapper").fadeIn('slow');
+    </script>
+</body>
+
+</html>
