@@ -3,3 +3,4 @@
 
 - Sliding menu
 - Frameless Window
+- Charts Support(Baidu ECharts)
