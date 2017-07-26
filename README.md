@@ -1,6 +1,7 @@
-**土建報表系統**
+**A UI Template Based On Electron**
 =====
 
-- 根據預定義報表模板快速錄入數據
-- GPS定位支持
-- 地圖標記支持
+- Sliding menu
+- Frameless Window
+- Charts Support(Baidu ECharts)
+![demo](https://github.com/wax100628/electron-general-ui/blob/pure-ui-branch/demo.gif)

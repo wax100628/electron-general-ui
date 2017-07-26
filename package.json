@@ -1,7 +1,7 @@
 {
-  "name": "Architecture_Report_System",
+  "name": "Electron_General_UI",
   "version": "1.0.0",
-  "description": "土建报表系统",
+  "description": "UI TEMPLATE",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -9,9 +9,10 @@
   },
   "keywords": [
     "electron",
-    "slider"
+    "sliding menu"
   ],
   "author": "vhjx",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^1.6.11",
     "electron-packager": "*"
